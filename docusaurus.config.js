@@ -18,11 +18,13 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'Vasanth', // Usually your GitHub org/user name.
-  projectName: 'My Blog', // Usually your repo name.
+  organizationName: 'vasanth-selvaraj', // Usually your GitHub org/user name.
+  projectName: 'my-blog', // Usually your repo name.
+  deploymentBranch:"main",
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
+  trailingSlash: false,
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
