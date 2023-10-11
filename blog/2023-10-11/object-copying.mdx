@@ -1,0 +1,68 @@
+---
+slug: object-copying
+title: 💡 Mastering Object Duplication, The Shallow vs Deep Copy in JavaScript 🔍
+authors: Vasanth
+tags: [React,JavaScript,Begginer,useState, state Management, React Hooks]
+---
+
+
+In JavaScript, when you create a new object and assign it to a variable, the object is stored in memory and the variable points to the memory location where the object is stored. In some cases, you may want to create a copy of an object, which can either be a shallow copy or a deep copy. Understanding the difference between these two types of copies is essential for making the right choice when working with objects in JavaScript.
+
+### Shallow Copy
+A shallow copy is a copy of an object where only the reference to the object is copied, and not the object itself. This means that if you modify the original object, the changes will reflect in the shallow copy as well. Consider the following code:
+
+```jsx
+let originalObject = { name: 'John', age: 30 };
+let shallowCopy = originalObject;
+shallowCopy.name = 'Jane';
+console.log(originalObject.name); // Output: Jane
+```
+
+In this code, the original object is assigned to the variable shallowCopy. Since shallowCopyis only a reference to the original object, changing the value of shallowCopy.name also changes the value of originalObject.name.
+
+### Deep Copy
+A deep copy, on the other hand, is a copy of an object where the object itself is copied, not just the reference. This means that changes made to the original object will not reflect in the deep copy. To create a deep copy, you can use a number of techniques, including JSON stringify and parse, `Object.assign()`, or the spread operator.
+
+Here is an example of creating a deep copy using `Object.assign()`, this method can be used to create a deep copy of an object in JavaScript. `Object.assign()` is a method on the Object constructor that creates a new object and copies the properties of one or more source objects to the newly created object.
+
+```jsx
+let originalObject = { name: 'John', age: 30 };
+let deepCopy = Object.assign({}, originalObject);
+deepCopy.name = 'Jane';
+console.log(originalObject.name); // Output: John
+```
+
+In this example, `Object.assign()` takes two arguments: an empty object {} and originalObject. The properties of originalObjectare copied to the newly created object, which is assigned to the variable deepCopy. As with the previous example, changes made to deepCopy will not reflect in originalObject.
+
+It’s worth noting that `Object.assign()` is a shallow copy method. This means that if the source object contains nested objects, the references to those nested objects will be copied, not the objects themselves. To create a deep copy of an object with nested objects, you would need to perform a deep copy on the nested objects as well. In which cases you can use `JSON.stringify()` and `JSON.parse()`
+
+### "Deep" Deep Copy
+
+Here is an example of creating a “deep” deep copy using `JSON.stringify()` and `JSON.parse()`:
+
+```jsx
+let originalObject = { name: 'John', age: 30 };
+let deepCopy = JSON.parse(JSON.stringify(originalObject));
+deepCopy.name = 'Jane';
+console.log(originalObject.name); // Output: John
+```
+
+In this code, `JSON.stringify()` is used to convert the original object to a string, which is then parsed using `JSON.parse()` to create a new object that is assigned to the variable deepCopy. Since deepCopyis a new object, changes made to it will not reflect in the original object.
+
+Both `JSON.parse()` and `Object.assign()` can be used to create a deep copy of an object in JavaScript. However, there are some advantages to using `JSON.parse()` over `Object.assign()` in certain situations.
+
+### Advantage
+
+One advantage of using `JSON.parse()` is that it creates a true deep copy of the object, meaning that all the properties and values of the original object are copied to the new object, including any nested objects. This is particularly useful when working with complex objects that contain multiple nested objects, as it ensures that all of the nested objects are copied as well, and any changes made to the nested objects in the new object will not reflect in the original object.
+
+Another advantage of `JSON.parse()` is that it provides a consistent way of creating a deep copy, regardless of the type of the original object. For example, if the original object is an array, a number, a string, or a boolean, `JSON.stringify()` can still be used to create a deep copy, as it will automatically convert the object to a JSON string, and `JSON.parse()` can then be used to convert it back to an object.
+
+### Comparison
+
+In comparison, ``Object.assign()`` only works with objects, and if the original object is of a different type, it will not work. Additionally, `Object.assign()` only performs a shallow copy, so if the original object contains nested objects, the references to those nested objects will be copied, not the objects themselves.
+
+
+### Conclusion
+In conclusion, ``JSON.parse()`` is a more flexible and reliable method for creating a deep copy of an object in JavaScript, especially when working with complex objects that contain multiple nested objects. While `Object.assign()` can be a useful tool for creating a shallow copy, it's important to be aware of its limitations and to choose the appropriate method for your specific use case.
+
+
