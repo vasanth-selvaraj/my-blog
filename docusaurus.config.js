@@ -87,7 +87,7 @@ const config = {
       footer: {
         style: "light",
         links: [],
-        copyright: `Made with 💜 by and © Vasanth ${new Date().getFullYear()}.`,
+        copyright: `Made with 💜 and © by Vasanth ${new Date().getFullYear()}.`,
       },
       prism: {
         theme: lightCodeTheme,
