@@ -64,7 +64,7 @@ const config = {
           tagName: "link",
           attributes: {
             rel: "preconnect",
-            href: "https://vasanth-selvaraj.github.io/vasanth/",
+            href: "https://vasanth.tech",
           },
         },
       ],
@@ -78,7 +78,7 @@ const config = {
         },
         items: [
           {
-            href: "https://vasanth-selvaraj.github.io/vasanth/",
+            href: "https://vasanth.tech",
             label: "Portfolio",
             position: "right",
           },
