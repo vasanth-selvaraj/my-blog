@@ -50,14 +50,27 @@ const config = {
           customCss: require.resolve("./src/css/custom.css"),
         },
       }),
-      
     ],
   ],
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      metadata: [{ name: "keywords", content: "tech, blog" }],
+      metadata: [
+        { name: "keywords", content: "tech, blog" },
+        {
+          name: "google-site-verification",
+          content: "x31vTQvK7B2Ral8L2f3C5o3yqslTwke_m8uhpSCeipw",
+        },
+        {
+          name: "description",
+          content: "Exploring the tech world, one byte at a time. Stay updated with the latest in technology, coding, and innovation on my blog",
+        },
+        {
+          property: "og:url",
+          content: "https://blog.vasanth.tech",
+        }
+      ],
       headTags: [
         // Declare a <link> preconnect tag
         {
