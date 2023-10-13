@@ -64,6 +64,11 @@ const config = {
             "tech, blog,vasanth, vasanth selvaraj, vasanth`s blog, tech blog, reactJs, statemanagement",
         },
         {
+          name: "description",
+          content:
+            "Exploring the tech world, one byte at a time. Stay updated with the latest in technology, coding, and innovation on my blog",
+        },
+        {
           name: "google-site-verification",
           content: "x31vTQvK7B2Ral8L2f3C5o3yqslTwke_m8uhpSCeipw",
         },
