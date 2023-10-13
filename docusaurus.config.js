@@ -6,8 +6,9 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "My Blog",
-  tagline: "Thoughts of Vasanth",
+  title: "Vasanth`s Blog",
+  tagline:
+    "Exploring the tech world, one byte at a time. Stay updated with the latest in technology, coding, and innovation on my blog",
   favicon: "img/favicon.ico",
 
   // Set the production url of your site here
@@ -57,19 +58,39 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       metadata: [
-        { name: "keywords", content: "tech, blog" },
+        {
+          name: "keywords",
+          content:
+            "tech, blog,vasanth, vasanth selvaraj, vasanth`s blog, tech blog, reactJs, statemanagement",
+        },
         {
           name: "google-site-verification",
           content: "x31vTQvK7B2Ral8L2f3C5o3yqslTwke_m8uhpSCeipw",
         },
         {
-          name: "description",
-          content: "Exploring the tech world, one byte at a time. Stay updated with the latest in technology, coding, and innovation on my blog",
-        },
-        {
           property: "og:url",
           content: "https://blog.vasanth.tech",
-        }
+        },
+        {
+          name: "twitter:card",
+          content: "summary_large_image",
+        },
+        {
+          name: "twitter:title",
+          content: "Vasanth`s Blog",
+        },
+        {
+          name: "twitter:description",
+          content: "Sharing my knowledge and skills in web development.",
+        },
+        {
+          name: "twitter:image",
+          content: "img/blog-writing.png",
+        },
+        {
+          name: "viewport",
+          content: "width=device-width, initial-scale=1.0",
+        },
       ],
       headTags: [
         // Declare a <link> preconnect tag
