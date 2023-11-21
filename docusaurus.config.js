@@ -1,6 +1,6 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
-
+//cmd /c "set GIT_USER=vasanth-selvaraj&& npm run deploy"
 const lightCodeTheme = require("prism-react-renderer/themes/github");
 const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
@@ -42,6 +42,8 @@ const config = {
       ({
         docs: false,
         blog: {
+          blogSidebarTitle: 'Everything',
+          blogSidebarCount: 'ALL',
           showReadingTime: true,
           routeBasePath: "/",
           // Please change this to your repo.
@@ -122,6 +124,9 @@ const config = {
             position: "right",
           },
         ],
+      },
+      comment:{
+        utterances: 'vasanth-selvaraj/my-blog',
       },
       footer: {
         style: "light",
