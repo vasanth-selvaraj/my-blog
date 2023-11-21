@@ -1,0 +1,56 @@
+---
+title: Understanding React Lifecycle Methods in Functional and Class Components
+description: A comprehensive guide to React lifecycle methods in both functional and class components.
+slug: react-lifecycle-methods-functional-class
+authors: Vasanth
+tags: [React,JavaScript,Begginer,React Lifecycle]
+enableComments: true # for Gisqus
+---
+
+# Understanding React Lifecycle Methods in Functional and Class Components
+
+React provides a series of lifecycle methods that allow developers to hook into different stages of a component's lifecycle. These methods vary between functional and class components due to the differences in their nature.
+<!--truncate-->
+## Lifecycle Methods in Class Components
+
+### Mounting Phase
+
+In class components, the lifecycle methods are as follows:
+
+1. **`constructor()`**: The first method called when a component is initialized. Used for state initialization and method binding.
+
+2. **`render()`**: Renders the UI based on the current state and props.
+
+3. **`componentDidMount()`**: Invoked after the component is mounted in the DOM. Suitable for side effects like data fetching or setting up subscriptions.
+
+### Updating Phase
+
+1. **`static getDerivedStateFromProps()`**: Used to update the state based on changes in props. Returns an object to update the state or null if no update is required.
+
+2. **`shouldComponentUpdate()`**: Determines whether the component should re-render after receiving new props or state.
+
+3. **`render()`**: Re-renders the component with updated state or props.
+
+4. **`getSnapshotBeforeUpdate()`**: Captures information before changes are made to the DOM, commonly used for preserving user interactions.
+
+5. **`componentDidUpdate()`**: Executes after the component is updated in the DOM. Suitable for post-update actions like network requests.
+
+### Unmounting Phase
+
+1. **`componentWillUnmount()`**: Called just before a component is unmounted. Used for cleanup operations.
+
+## Lifecycle Methods in Functional Components (Hooks)
+
+Functional components utilize React Hooks to handle lifecycle behavior:
+
+1. **`useEffect()`**: Combines functionality of `componentDidMount()`, `componentDidUpdate()`, and `componentWillUnmount()`. Handles side effects by specifying cleanup logic when the component unmounts.
+
+## Practical Usage and Best Practices
+
+- **Class Components**: Utilize lifecycle methods in class components for fine-grained control and deeper integration with lifecycle phases.
+  
+- **Functional Components with Hooks**: Embrace the simplicity and reusability of functional components with hooks, using `useEffect()` for side effects and lifecycle management.
+
+## Conclusion
+
+Understanding React lifecycle methods in both class and functional components is crucial for managing component behavior, optimizing performance, and ensuring proper cleanup. Whether using class components or functional components with hooks, React provides mechanisms to handle various stages of a component's lifecycle effectively.
