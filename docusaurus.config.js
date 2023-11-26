@@ -3,6 +3,7 @@
 //cmd /c "set GIT_USER=vasanth-selvaraj&& npm run deploy"
 const lightCodeTheme = require("prism-react-renderer/themes/github");
 const darkCodeTheme = require("prism-react-renderer/themes/dracula");
+// const { default: BlogList } = require("./src/components/BlogList/BlogList");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -42,10 +43,14 @@ const config = {
       ({
         docs: false,
         blog: {
-          blogSidebarTitle: 'Everything',
-          blogSidebarCount: 'ALL',
+          blogSidebarTitle: "Everything",
+          blogDescription:
+            "Exploring the tech world, one byte at a time. Stay updated with the latest in technology, coding, and innovation on my blog",
+          blogSidebarCount: 0,
+          blogTitle:"Vasanth`s Blog",
           showReadingTime: true,
           routeBasePath: "/",
+          // blogListComponent:BlogList
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
         },
@@ -99,6 +104,11 @@ const config = {
           content: "width=device-width, initial-scale=1.0",
         },
       ],
+      docs: {
+        sidebar: {
+          hideable: true,
+        },
+      },
       headTags: [
         // Declare a <link> preconnect tag
         {
@@ -125,13 +135,13 @@ const config = {
           },
         ],
       },
-      comment:{
-        utterances: 'vasanth-selvaraj/my-blog',
+      comment: {
+        utterances: "vasanth-selvaraj/my-blog",
       },
       footer: {
         style: "light",
         links: [],
-        copyright: `Made with 💜 and © by Vasanth ${new Date().getFullYear()}.`,
+        copyright: `Copyright © Vasanth's Blog ${new Date().getFullYear()}. Made with Docusaurus, CSS, and 💜 by Vasanth.`,
       },
       prism: {
         theme: lightCodeTheme,
