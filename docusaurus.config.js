@@ -1,6 +1,8 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
-//cmd /c "set GIT_USER=vasanth-selvaraj&& npm run deploy"
+// cmd /c "set GIT_USER=vasanth-selvaraj&& npm run deploy" in Windows
+// GIT_USER=vasanth-selvaraj npm run deploy in Mac
+
 const lightCodeTheme = require("prism-react-renderer/themes/github");
 const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 // const { default: BlogList } = require("./src/components/BlogList/BlogList");
