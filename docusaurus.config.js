@@ -114,6 +114,13 @@ const config = {
         {
           tagName: "link",
           attributes: {
+            rel: "apple-touch-icon",
+            href: "img/logo.png",
+          },
+        },
+        {
+          tagName: "link",
+          attributes: {
             rel: "preconnect",
             href: "https://vasanth.tech",
           },
