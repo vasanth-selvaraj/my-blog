@@ -1,7 +1,7 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 // cmd /c "set GIT_USER=vasanth-selvaraj&& npm run deploy" in Windows
-// GIT_USER=vasanth-selvaraj npm run deploy in Mac
+// GIT_USER=vasanth-selvaraj npm run deploy in Mac or 'USE_SSH=true npm run deploy'
 
 const lightCodeTheme = require("prism-react-renderer/themes/github");
 const darkCodeTheme = require("prism-react-renderer/themes/dracula");
@@ -150,7 +150,7 @@ const config = {
       footer: {
         style: "light",
         links: [],
-        copyright: `Copyright © Vasanth's Blog ${new Date().getFullYear()}. Made with Docusaurus, CSS, and 💜 by Vasanth.`,
+        copyright: `Copyright © Vasanth's Blog ${new Date().getFullYear()}. Made with Docusaurus, TailwindCSS, and 💜 by Vasanth.`,
       },
       prism: {
         theme: lightCodeTheme,
