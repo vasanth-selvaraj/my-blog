@@ -79,7 +79,7 @@ const config = {
         },
         {
           name: "google-site-verification",
-          content: "x31vTQvK7B2Ral8L2f3C5o3yqslTwke_m8uhpSCeipw",
+          content: "GS9NKtAFGWa12gN64YtlBicN6ob8rEeJ68PEz2hCCDo",
         },
         {
           property: "og:url",
