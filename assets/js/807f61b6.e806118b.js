@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkmy_blog=self.webpackChunkmy_blog||[]).push([[203],{5184:t=>{t.exports=JSON.parse('{"permalink":"/tags/react","page":1,"postsPerPage":10,"totalPages":1,"totalCount":5,"blogDescription":"Exploring the tech world, one byte at a time. Stay updated with the latest in technology, coding, and innovation on my blog","blogTitle":"Vasanth`s Blog"}')}}]);
