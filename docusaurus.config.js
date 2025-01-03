@@ -83,7 +83,7 @@ const config = {
         },
         {
           property: "og:url",
-          content: "https://https://vasanth-selvaraj.github.io/my-blog/",
+          content: "https://vasanth-selvaraj.github.io/my-blog/",
         },
         {
           name: "twitter:card",
@@ -124,7 +124,7 @@ const config = {
           tagName: "link",
           attributes: {
             rel: "preconnect",
-            href: "https://https://vasanth-selvaraj.github.io/portfolio/",
+            href: "https://vasanth-selvaraj.github.io/portfolio/",
           },
         },
       ],
@@ -138,7 +138,7 @@ const config = {
         },
         items: [
           {
-            href: "ttps://https://vasanth-selvaraj.github.io/portfolio/",
+            href: "https://vasanth-selvaraj.github.io/portfolio/",
             label: "Portfolio",
             position: "right",
           },
