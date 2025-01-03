@@ -15,10 +15,10 @@ const config = {
   favicon: "img/favicon.ico",
 
   // Set the production url of your site here
-  url: "https://blog.vasanth.tech",
+  url: "https://vasanth-selvaraj.github.io",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: "/",
+  baseUrl: "/my-blog",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -83,7 +83,7 @@ const config = {
         },
         {
           property: "og:url",
-          content: "https://blog.vasanth.tech",
+          content: "https://https://vasanth-selvaraj.github.io/my-blog/",
         },
         {
           name: "twitter:card",
@@ -124,7 +124,7 @@ const config = {
           tagName: "link",
           attributes: {
             rel: "preconnect",
-            href: "https://vasanth.tech",
+            href: "https://https://vasanth-selvaraj.github.io/portfolio/",
           },
         },
       ],
@@ -138,7 +138,7 @@ const config = {
         },
         items: [
           {
-            href: "https://vasanth.tech",
+            href: "ttps://https://vasanth-selvaraj.github.io/portfolio/",
             label: "Portfolio",
             position: "right",
           },
